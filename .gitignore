@@ -1,0 +1,5 @@
+/.idea/inspectionProfiles
+/.idea/sonarlint
+/.idea/*.iml
+/.idea/*.xml
+*.iml
