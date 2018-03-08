@@ -1,8 +1,8 @@
 package com.codeblazing.domain;
 
-public class DomainClass {
+public class DomainClass extends DomainBlueprint {
 
-	public void helloSpring() {
+	public void springBeanSaysHello() {
 		System.out.println("Hello Spring Bean!!!");
 	}
 }
