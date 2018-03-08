@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
 
 @Configuration
-@ComponentScan("com.codeblazing.domainscan")
+@ComponentScan({"com.codeblazing.domainscan", "com.codeblazing.repository"})
 public class SpringConfig {
 
 	@Bean

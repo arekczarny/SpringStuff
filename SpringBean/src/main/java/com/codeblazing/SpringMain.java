@@ -4,6 +4,7 @@ import com.codeblazing.configuration.SpringConfig;
 import com.codeblazing.domain.DomainBlueprint;
 import com.codeblazing.domain.DomainClass;
 import com.codeblazing.domainscan.DomainScanClass;
+import com.codeblazing.repository.SpringRepository;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
@@ -16,6 +17,8 @@ public class SpringMain {
         domainClass.springBeanSaysHello();
         DomainScanClass domainScanClass = getSpringBean(applicationContext, "domainScanClass", DomainScanClass.class);
         domainScanClass.springBeanSaysHello();
+        SpringRepository springRepository = getSpringBean(applicationContext, "springRepository", SpringRepository.class);
+        springRepository.springBeanSaysHello();
         applicationContext.close();
     }
 
