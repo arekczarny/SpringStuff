@@ -18,7 +18,7 @@ public class DomainServiceClass extends DomainBlueprint {
 	}
 
 	public void springBeanSaysHello() {
-		System.out.print("Spring Service bean from inside !!  ");
+		System.out.print("Hello Spring Service bean with injected companion  ");
 		domainClass.springBeanSaysHello();
 	}
 }
