@@ -2,6 +2,7 @@ package com.codeblazing.configuration;
 
 import com.codeblazing.domain.InternalProcessor;
 import com.codeblazing.domain.RestAPIClient;
+import com.codeblazing.domaintwo.ArekWork;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -26,5 +27,10 @@ public class SpringConfig {
 	@Qualifier("internalProcObjectMapper")
 	public ObjectMapper objectMapper() {
 		return new ObjectMapper();
+	}
+
+	@Bean
+	public ArekWork arekWork() {
+		return new ArekWork();
 	}
 }
