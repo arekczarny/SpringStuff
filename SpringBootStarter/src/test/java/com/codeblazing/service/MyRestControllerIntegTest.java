@@ -40,6 +40,6 @@ public class MyRestControllerIntegTest {
 	@Test
 	public void greetings() throws Exception {
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-		assertThat(response.getBody(), equalTo("Hello from Spring Boot Rest Controldsfler!"));
+		assertThat(response.getBody(), equalTo("Hello from Spring Boot Rest Controller!"));
 	}
 }
